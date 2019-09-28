@@ -1,5 +1,5 @@
 import json
-from app import app, bucket, db
+from app import app, bucket, db, partners
 from flask import render_template, request, url_for, redirect
 
 
