@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scholars At Risk</title>
+</head>
+<body>
+<select name= UserID method="GET" action="/index">
+	<option value="{{UserID[0]}}" selected>{{UserID[0]}}</option>
+    {% for User in UserID[1:] %}
+    <option value= "{{User}}">{{User}}</option>"
+    {% endfor %}
+</select>
+
+</select>
+</body>
+</html>
