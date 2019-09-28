@@ -31,8 +31,8 @@
         <hr>
         <div class="user">USER INFORMATION</div>
         <div>
-            <label>Please identify your user type: <label>
-            <select name="user">
+            <label for="userid">Please identify your user type: <label>
+            <select id="userid" name="userid">
                 <option value=""></option>
                 <option value="Scholar">Scholar</option>
                 <option value="Student">Student</option>
@@ -157,8 +157,8 @@
             </select>
         </div>
         <div>
-            <label>What is the primary source of consequences that you or any professional colleagues or students might fear that would cause you to self-censor your professional expression (research, teaching/studies, publication, public expression)? </label>
-            <select>
+            <label for="consequences">What is the primary source of consequences that you or any professional colleagues or students might fear that would cause you to self-censor your professional expression (research, teaching/studies, publication, public expression)? </label>
+            <select id="consequences" name="consequences">
                 <option value=""></option>
                 <option value="Colleagues/Professional peers">Colleagues/Professional peers</option>
                 <option value="University/Employer">University/Employer</option>
@@ -197,6 +197,7 @@
                 <option value="About the same">About the same</option>
             </select>
         </div>
+        <input class="btn btn-outline-danger" type="submit" value="Submit">
     </form>
     </div>
 </body>
