@@ -55,6 +55,7 @@ option{
 }
 input[type="submit"] {
     margin-top: 10px;
+    margin-bottom: 3%;
 }
 
 .container {
