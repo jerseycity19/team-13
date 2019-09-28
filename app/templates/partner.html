@@ -1,0 +1,46 @@
+<body>
+    <h1>Create event</h1>
+
+    Page for partners to customize their own event.
+
+    <form method="post" enctype="multipart/form-data">
+        <div>
+            <label for="code">Unique event code *</label>
+            <input id="code" name="code" required />
+        </div>
+
+        <div>
+            <label for="eventname">Event name *</label>
+            <input id="eventname" name="eventname" required />
+        </div>
+
+        <div>
+            <label for="bgcolor">Background color *</label>
+            <input type="color" id="bgcolor" name="bgcolor" required />
+        </div>
+
+        <div>
+            <label for="fgcolor">Foreground color *</label>
+            <input type="color" id="fgcolor" name="fgcolor" required />
+        </div>
+
+        <div>
+            <label for="logo">Event logo</label>
+            <input type="file" id="logo" name="logo" />
+        </div>
+
+        <div>
+            <label for="datestart">Date start *</label>
+            <input type="date" id="datestart" name="datestart" required />
+        </div>
+
+        <div>
+            <label for="dateend">Date end</label>
+            <input type="date" id="dateend" name="dateend" />
+        </div>
+
+        <div>
+            <button type="submit">Create event</button>
+        </div>
+    </form>
+</body>

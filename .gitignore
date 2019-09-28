@@ -1,5 +1,6 @@
 firebase.json
 venv/
+uploads/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
