@@ -1,11 +1,12 @@
 from app import app, bucket, db, partners, users
-from flask import render_template, request, url_for, redirect
+from flask import render_template, request, url_for, redirect, session
 import json
 
 
 @app.route('/',  methods=['GET', 'POST'])
 @app.route('/index', methods=['GET', 'POST'])
 def index():
+    code = request.args.get('code')
     if request.method == 'GET':
         country_file = open("app/data/country-by-continent.json")
         countries = json.load(country_file)
@@ -13,14 +14,13 @@ def index():
         languages = json.load(language_file)
 
         highlightColor = "#e2656b"
-        code = request.args.get('code')
         event = db.collection('events').document(code).get().to_dict()
 
         if event:
             highlightColor = event['fgcolor']
 
         return render_template('main.html', countries=countries,
-                               languages=languages,
+                               languages=languages, code=code,
                                highlightColor=highlightColor)
 
     # it's a POST
@@ -31,8 +31,14 @@ def index():
 
     db.collection('Information').add(to_insert)
 
+    url = url_for('index')
+    if code:
+        url += '?code=' + code
+    session['back_link'] = url
+
     return redirect(url_for("thanks"))
 
 @app.route("/thank-you")
 def thanks():
-    return render_template("thank-you.html")
+    url = session['back_link']
+    return render_template("thank-you.html", back_link=url)
