@@ -37,6 +37,7 @@ select{
     border-bottom: 1px solid #e2656b;
     outline:none;
     margin-left: 5px;
+    max-width: 100%;
 }
 option{
     outline:none;
@@ -51,3 +52,41 @@ option{
     font-style: italic;
     color:grey;
 }
+
+@media screen and (max-width: 575.98px) { 
+    input[type="submit"]{
+        display: block;
+        width: 100%;
+    }
+    body {
+        font-size: 20px!important;
+    }
+    .logo {
+        max-width: 90%;
+    }
+    .divForm {
+        width: 90%;
+    }
+    .screen1 {
+        width: 90%;
+    }
+ }
+
+@media screen and (min-width: 576px) and (max-width: 790px) { 
+    .input[type="submit"] {
+        display: block;
+        width: 100%;
+    }
+    body {
+        font-size: 14px!important;
+    }
+    .logo {
+        max-width: 80%;
+    }
+    .divForm {
+        width: 75%;
+    }
+    .screen1 {
+        width: 75%;
+    }
+ }
