@@ -22,8 +22,6 @@ def index():
 
     if 'condition' in to_insert:
         to_insert["condition"] = True if to_insert["condition"] == 'checked' else False
-    print(to_insert['employment'])
-    to_insert['']
 
     db.collection('Information').add(to_insert)
 
