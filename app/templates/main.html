@@ -27,6 +27,16 @@
     </style>
 </head>
 
+<div class="lang-selector"> 
+        <label>Choose your language: </label> <br>
+        <select name="lang-selector">
+            <option value=""></option>
+            {% for lang, x in languages.items() %}
+            <option name="{{ x['native'] }}" value="{{ lang }}">{{ languages[lang]['native'] }}</p>
+            {% endfor %}
+        </select>
+</div>
+
 <div class = "logo mx-auto">
     <img class = "mx-auto d-block" src="https://cdn.discordapp.com/attachments/617864535688216709/627393697985724416/logo.png"><br>
     <img class = "mx-auto d-block" style="width: 90%" src="https://cdn.discordapp.com/attachments/617864535688216709/627396008074018817/statement.png"><br>
