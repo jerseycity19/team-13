@@ -1,0 +1,10 @@
+<html>
+    <head>
+        <title>Language Select Test Page</title>
+    </head>
+    <body>
+        {% for lang in languages %}
+        <p>{{ languages[lang]['native'] }}</p>
+        {% endfor %}
+    </body>
+</html>
