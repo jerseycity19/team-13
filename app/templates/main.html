@@ -35,6 +35,21 @@
         </div>
         <div>
             <label>Please identity your gender: </label>
+            <select>
+                <option value=""></option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Nonbinary">Nonbinary</option>
+            </select>
+        </div>
+        <div>
+            <label>Select your country of residence: </label>
+            <select name="countries">
+                <option value=""></option>
+                {% for coun in countries %}
+                <option name="{{ coun["country"] }}" value="{{ coun["continent"] }}">{{ coun["country"] }}</p>
+                {% endfor %}
+            </select>
         </div>
     </form>
 </body>

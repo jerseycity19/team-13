@@ -5,7 +5,9 @@ import json
 @app.route('/')
 @app.route('/index', methods = ['GET'])
 def index():
-    return render_template('main.html')
+    country_file = open("app/data/country-by-continent.json")
+    countries = json.load(country_file)
+    return render_template('main.html', countries=countries)
 
 @app.route('/languages')
 def languages():
@@ -13,8 +15,3 @@ def languages():
     languages = json.load(language_file)
     return render_template('languages.html', languages=languages)
 
-@app.route('/countries')
-def countries():
-    country_file = open("app/data/country-by-continent.json")
-    countries = json.load(country_file)
-    return render_template('countries.html', countries=countries)
