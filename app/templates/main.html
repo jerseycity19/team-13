@@ -24,13 +24,13 @@
 
 <body>
     <div class="divForm">
-    <form>
+    <form method ="POST">
         <div>
             <input type="checkbox" name="condition" value="checked">I understand and agree that the data I submit
             will be used anonymously in reports, studies and advocacy about self-censorship.<br>
         </div>
         <hr>
-        <div class="user">USER INFORMATION</div>
+        <div class="header">USER INFORMATION</div>
         <div>
             <label for="userid">Please identify your user type: <label>
             <select id="userid" name="userid">
@@ -75,8 +75,8 @@
             <label>Please identify your primary professional language: </label>
             <select name="language">
                 <option value=""></option>
-                {% for lang in languages %}
-                <option name="{{ languages[lang] }}" value="{{ languages[lang] }}">{{ languages[lang]['native'] }}</p>
+                {% for lang, x in languages.items() %}
+                <option name="{{ x['native'] }}" value="{{ lang }}">{{ languages[lang]['native'] }}</p>
                 {% endfor %}
             </select>
         </div>
@@ -93,7 +93,7 @@
         </div>
         <div>
             <label>Please identify your disciple area: </label>
-            <select name="employment">
+            <select name="disciple">
                 <option value=""></option>
                 <option value="Natural Sciences">Natural Sciences</option>
                 <option value="Social Sciences">Social Sciences</option>
@@ -127,8 +127,9 @@
         <hr>
 
         <div>
+            <div class="header">QUESTIONNAIRE</div>
             <label>Since the start of the last academic year, how often have you self-censored your professional expression (research, teaching/studies, publication, public expression) because of fear of professional, legal, or violent retaliation? <label>
-            <select>
+            <select name = "selfcensor">
                 <option value=""></option>
                 <option value="Never">Never</option>
                 <option value="Sometimes">Sometimes</option>
@@ -139,7 +140,7 @@
         <div>
             <label>Since the start of the last academic year, how many professional colleagues or students are you aware of who have self-censored their professional expression (research, teaching/studies, publication, public expression) because of fear of professional, legal, or violent retaliation?
             <label>
-            <select>
+            <select name="aware_of_colleague_saffected">
                 <option value=""></option>
                 <option value="None">None</option>
                 <option value="A few">A few</option>
@@ -149,7 +150,7 @@
         </div>
         <div>
             <label>Since the start of the last academic year, how often have you advised any professional colleagues or students to self-censor their professional expression (research, teaching/studies, publication, public expression) because of fear of professional, legal, or violent retaliation?</label>
-            <select>
+            <select name="advised">
                 <option value=""></option>
                 <option value="Never">Never</option>
                 <option value="Sometimes">Sometimes</option>
@@ -173,7 +174,7 @@
         </div>
         <div>
             <label>Since the start of the last academic year, have you experienced any professional, legal, or violent retaliation for your professional expression (research, teaching/studies, publication, public expression)? </label>
-            <select>
+            <select name="experienced_retaliation">
                 <option value=""></option>
                 <option value="Yes">Yes</option>
                 <option value="No">No</option>
@@ -182,7 +183,7 @@
         </div>
         <div>
             <label>Since the start of the last academic year, are you aware of any professional colleagues or students who have experiences any professional, legal, or violent retaliation for their professional expression (research, teaching/studies, publication, public expression)? </label>
-            <select>
+            <select name="aware_of_colleagues_experienced_retaliation">
                 <option value=""></option>
                 <option value="Yes">Yes</option>
                 <option value="No">No</option>
@@ -191,7 +192,7 @@
         </div>
         <div>
             <label>Compared to before the start of the last academic year, are you more or less likely today to self-censor your professional expression (research, teaching/studies, publication, public expression) because of fear of professional, legal, or violent retaliation? </label>
-            <select>
+            <select name="likeliness_to_selfcensor">
                 <option value=""></option>
                 <option value="More likely">More likely</option>
                 <option value="Less likely">Less likely</option>
