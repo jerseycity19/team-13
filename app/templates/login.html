@@ -1,0 +1,23 @@
+<body>
+    <h1>Login</h1>
+
+    Page for administrators (access all data) and partners (can create events) to log in.
+
+    <div style="background-color:red">{{message}}</div>
+
+    <form method="POST">
+        <div>
+            <label for="username">Username</label>
+            <input id="username" name="username" required />
+        </div>
+
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required />
+        </div>
+
+        <div>
+            <button type="submit">Log in</button>
+        </div>
+    </form>
+</body>

@@ -1,6 +1,6 @@
-import json
-from app import app, bucket, db, partners
+from app import app, bucket, db, partners, users
 from flask import render_template, request, url_for, redirect
+import json
 
 
 @app.route('/',  methods=['GET', 'POST'])
