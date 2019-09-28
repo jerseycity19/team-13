@@ -29,6 +29,7 @@ select{
     outline:none;
     margin-left: 5px;
     max-width: 100%;
+    margin-bottom: 1%;
 }
 option{
     outline:none;
@@ -49,9 +50,11 @@ option{
     padding-left: 20px;
     padding-right: 20px;
 }
-.text-center{
-    margin-top: 3%;
-    border: 1px solid #e2656b;
+
+.container {
+    width: 100%;
+    margin-top: 2%;
+    border: 2px solid #e2656b;
 }
 
 @media screen and (max-width: 575.98px) { 
