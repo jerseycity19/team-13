@@ -25,6 +25,7 @@ def index():
 
     # it's a POST
     to_insert = request.form.to_dict()
+    to_insert['tag'] = code
 
     if 'condition' in to_insert:
         to_insert["condition"] = True if to_insert["condition"] == 'checked' else False
