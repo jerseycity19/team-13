@@ -54,14 +54,14 @@
     <div class="divForm">
     <form method ="POST">
         <div>
-            <input type="checkbox" name="condition" value="checked"> I understand and agree that the data I submit
+            <input type="checkbox" name="condition" value="checked" required> I understand and agree that the data I submit
             will be used anonymously in reports, studies and advocacy about self-censorship.<br>
         </div>
         <hr>
         <div class="header">USER INFORMATION</div>
         <div>
             <label for="userid">Please identify your user type: <label>
-            <select id="userid" name="userid">
+            <select id="userid" name="userid" required>
                 <option value=""></option>
                 <option value="Scholar">Scholar</option>
                 <option value="Student">Student</option>
@@ -71,7 +71,7 @@
         </div>
         <div>
             <label>Please identify your age range: <label>
-            <select name="age">
+            <select name="age" required>
                 <option value=""></option>
                 <option value="20-29">20-29</option>
                 <option value="30-39">30-39</option>
@@ -83,7 +83,7 @@
         </div>
         <div>
             <label>Please identity your gender: </label>
-            <select name="gender">
+            <select name="gender" required>
                 <option value=""></option>
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>
@@ -92,7 +92,7 @@
         </div>
         <div>
             <label>Please identify your country of residence: </label>
-            <select name="countries">
+            <select name="countries" required>
                 <option value=""></option>
                 {% for coun in countries %}
                 <option name="{{ coun["country"] }}" value="{{ coun["continent"] }}">{{ coun["country"] }}</p>
@@ -101,7 +101,7 @@
         </div>
         <div>
             <label>Please identify your primary professional language: </label>
-            <select name="language">
+            <select name="language" required>
                 <option value=""></option>
                 {% for lang, x in languages.items() %}
                 <option name="{{ x['native'] }}" value="{{ lang }}">{{ languages[lang]['native'] }}</p>
@@ -110,7 +110,7 @@
         </div>
         <div>
             <label>Please identify your employment status: </label>
-            <select name="employment">
+            <select name="employment" required>
                 <option value=""></option>
                 <option value="Tenure or permanent">Tenure or other permanent employment</option>
                 <option value="Full time time limited">Full-time time-limited contract</option>
@@ -121,7 +121,7 @@
         </div>
         <div>
             <label>Please identify your disciple area: </label>
-            <select name="disciple">
+            <select name="disciple" required>
                 <option value=""></option>
                 <option value="Natural Sciences">Natural Sciences</option>
                 <option value="Social Sciences">Social Sciences</option>
@@ -136,7 +136,7 @@
         </div>
         <div>
             <label>How sensitive is your work? </label>
-            <select name="sensitive">
+            <select name="sensitive" required>
                 <option value=""></option>
                 <option value="Not very sensitive">Not very sensitive</option>
                 <option value="Somewhat sensitive">Somewhat sensitive</option>
