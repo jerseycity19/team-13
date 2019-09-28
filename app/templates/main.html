@@ -1,17 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Scholars At Risk</title>
 </head>
-<body>
-<select name= UserID method="GET" action="/index">
-	<option value="{{UserID[0]}}" selected>{{UserID[0]}}</option>
-    {% for User in UserID[1:] %}
-    <option value= "{{User}}">{{User}}</option>"
-    {% endfor %}
-</select>
 
-</select>
+<body>
+    <div>
+        <p>This is placeholder introductory information.</p>
+    </div>
+    <form>
+        <div>
+            <label>Please identify your user type: <label>
+            <select>
+                <option value=""></option>
+                <option value="Scholar">Scholar</option>
+                <option value="Student">Student</option>
+                <option value="Administrator">Administrator</option>
+                <option value="Non-University">Non-University</option>
+            </select>
+        </div>
+        <div>
+            <label>Please identify your age range: <label>
+            <select>
+                <option value=""></option>
+                <option value="20-29">20-29</option>
+                <option value="30-39">30-39</option>
+                <option value="40-49">40-49</option>
+                <option value="50-59">50-59</option>
+                <option value="60-69">60-69</option>
+                <option value="70+">70+</option>
+            </select>
+        </div>
+        <div>
+            <label>Please identity your gender: </label>
+        </div>
+    </form>
 </body>
+
 </html>
