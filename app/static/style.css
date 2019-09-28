@@ -59,6 +59,7 @@ option{
 }
 .lang-selector label{
     margin: 0!important;
+    display: inline-block!important;
 }
 #long-q {
     margin-bottom: 3%;
