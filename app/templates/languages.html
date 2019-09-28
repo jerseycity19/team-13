@@ -3,8 +3,17 @@
         <title>Language Select Test Page</title>
     </head>
     <body>
-        {% for lang in languages %}
-        <p>{{ languages[lang]['native'] }}</p>
-        {% endfor %}
+        <label>What type of user are you?</label>
+        <select>
+            <option>Scholar</option>
+            <option>Professor</option>
+            <option>etc</option>
+        </select>
+        <label>Select your native language: </label>
+        <select name="language">
+            {% for lang in languages %}
+            <option name="{{ languages[lang] }}" value="{{ languages[lang] }}">{{ languages[lang]['native'] }}</p>
+            {% endfor %}
+        </select>
     </body>
 </html>

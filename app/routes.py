@@ -3,18 +3,10 @@ from app import app
 import json
 
 @app.route('/')
-@app.route('/index')
+@app.route('/index', methods = ['GET'])
 def index():
-    user = {'username': 'Miguel'}
-    return '''
-<html>
-    <head>
-        <title>Home Page - Microblog</title>
-    </head>
-    <body>
-        <h1>Hello, ''' + user['username'] + '''!</h1>
-    </body>
-</html>'''
+    UserID = ['Scholar', 'Student', 'Administrator', 'Non-University']
+    return render_template('test.html', UserID=UserID)
 
 @app.route('/languages')
 def languages():
