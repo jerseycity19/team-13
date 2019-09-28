@@ -53,9 +53,23 @@ option{
 .lang-selector label{
     margin: 0!important;
 }
+#long-q {
+    margin-bottom: 3%;
+}
+
+div#q2, div#q2 label, div#q2 select, div#q2 option,
+div#q3, div#q3 label, div#q3 select, div#q3 option,
+div#q4, div#q4 label, div#q4 select, div#q4 option,
+div#q5, div#q5 label, div#q5 select, div#q5 option,
+div#q6, div#q6 label, div#q6 select, div#q6 option,
+div#q7, div#q7 label, div#q7 select, div#q7 option {
+    display: none;
+}
+
 input[type="submit"] {
     margin-top: 10px;
     margin-bottom: 3%;
+    display: none;
 }
 
 .container {

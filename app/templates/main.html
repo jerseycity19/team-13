@@ -153,82 +153,98 @@
         whether from state or non-state sources, against yourself or others (e.g. family members)."</div>
 
         <hr>
-
-        <div>
-            <div class="header">QUESTIONNAIRE</div>
-            <label>Since the start of the last academic year, how often have you self-censored your professional expression (research, teaching/studies, publication, public expression) because of fear of professional, legal, or violent retaliation? <label>
-            <select name = "selfcensor">
-                <option value=""></option>
-                <option value="Never">Never</option>
-                <option value="Sometimes">Sometimes</option>
-                <option value="Frequently">Frequently</option>
-                <option value="All the time">All the time</option>
-            </select>
+        <div id="long-q">
+            <div id="q1">
+                <div class="header">QUESTIONNAIRE</div>
+                <label>(1/7) Since the start of the last academic year, how often have you self-censored your professional expression
+                    (research, teaching/studies, publication, public expression) because of fear of professional, legal, or
+                    violent retaliation? </label>
+                        <select name="selfcensor">
+                            <option value=""></option>
+                            <option value="Never">Never</option>
+                            <option value="Sometimes">Sometimes</option>
+                            <option value="Frequently">Frequently</option>
+                            <option value="All the time">All the time</option>
+                        </select>
+            </div>
+            <div id="q2">
+                <label>(2/7) Since the start of the last academic year, how many professional colleagues or students are you aware of
+                    who have self-censored their professional expression (research, teaching/studies, publication, public
+                    expression) because of fear of professional, legal, or violent retaliation?
+                </label>
+                        <select name="aware_of_colleague_saffected">
+                            <option value=""></option>
+                            <option value="None">None</option>
+                            <option value="A few">A few</option>
+                            <option value="A majority">A Majority</option>
+                            <option value="Almost all">Almost all</option>
+                        </select>
+            </div>
+            <div id="q3">
+                <label>(3/7) Since the start of the last academic year, how often have you advised any professional colleagues or
+                    students to self-censor their professional expression (research, teaching/studies, publication, public
+                    expression) because of fear of professional, legal, or violent retaliation?</label>
+                <select name="advised">
+                    <option value=""></option>
+                    <option value="Never">Never</option>
+                    <option value="Sometimes">Sometimes</option>
+                    <option value="Frequently">Frequently</option>
+                    <option value="All the time">All the time</option>
+                </select>
+            </div>
+            <div id="q4">
+                <label for="consequences">(4/7) What is the primary source of consequences that you or any professional colleagues or
+                    students might fear that would cause you to self-censor your professional expression (research,
+                    teaching/studies, publication, public expression)? </label>
+                <select id="consequences" name="consequences">
+                    <option value=""></option>
+                    <option value="Colleagues/Professional peers">Colleagues/Professional peers</option>
+                    <option value="University/Employer">University/Employer</option>
+                    <option value="Home Country Government">Home Country Government</option>
+                    <option value="Foreign Country Government">Foreign Country Government
+                    </option>
+                    <option value="Society/Public">Society/Public</option>
+                    <option value="Not sure">Not sure</option>
+                    <option value="No fear of consequences">No fear of consequences</option>
+                </select>
+            </div>
+            <div id="q5">
+                <label>(5/7) Since the start of the last academic year, have you experienced any professional, legal, or violent
+                    retaliation for your professional expression (research, teaching/studies, publication, public expression)?
+                </label>
+                <select name="experienced_retaliation">
+                    <option value=""></option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                    <option value="Not sure">Not sure</option>
+                </select>
+            </div>
+            <div id="q6">
+                <label>(6/7) Since the start of the last academic year, are you aware of any professional colleagues or students who
+                    have experiences any professional, legal, or violent retaliation for their professional expression
+                    (research, teaching/studies, publication, public expression)? </label>
+                <select name="aware_of_colleagues_experienced_retaliation">
+                    <option value=""></option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                    <option value="Not sure">Not sure</option>
+                </select>
+            </div>
+            <div id="q7">
+                <label>(7/7) Compared to before the start of the last academic year, are you more or less likely today to self-censor
+                    your professional expression (research, teaching/studies, publication, public expression) because of fear of
+                    professional, legal, or violent retaliation? </label>
+                <select name="likeliness_to_selfcensor">
+                    <option value=""></option>
+                    <option value="More likely">More likely</option>
+                    <option value="Less likely">Less likely</option>
+                    <option value="About the same">About the same</option>
+                </select>
+            </div>
+            <input class="btn btn-outline-danger" type="submit" value="Submit Anonymously">
         </div>
-        <div>
-            <label>Since the start of the last academic year, how many professional colleagues or students are you aware of who have self-censored their professional expression (research, teaching/studies, publication, public expression) because of fear of professional, legal, or violent retaliation?
-            <label>
-            <select name="aware_of_colleague_saffected">
-                <option value=""></option>
-                <option value="None">None</option>
-                <option value="A few">A few</option>
-                <option value="A majority">A Majority</option>
-                <option value="Almost all">Almost all</option>
-            </select>
-        </div>
-        <div>
-            <label>Since the start of the last academic year, how often have you advised any professional colleagues or students to self-censor their professional expression (research, teaching/studies, publication, public expression) because of fear of professional, legal, or violent retaliation?</label>
-            <select name="advised">
-                <option value=""></option>
-                <option value="Never">Never</option>
-                <option value="Sometimes">Sometimes</option>
-                <option value="Frequently">Frequently</option>
-                <option value="All the time">All the time</option>
-            </select>
-        </div>
-        <div>
-            <label for="consequences">What is the primary source of consequences that you or any professional colleagues or students might fear that would cause you to self-censor your professional expression (research, teaching/studies, publication, public expression)? </label>
-            <select id="consequences" name="consequences">
-                <option value=""></option>
-                <option value="Colleagues/Professional peers">Colleagues/Professional peers</option>
-                <option value="University/Employer">University/Employer</option>
-                <option value="Home Country Government">Home Country Government</option>
-                <option value="Foreign Country Government">Foreign Country Government
-                </option>
-                <option value="Society/Public">Society/Public</option>
-                <option value="Not sure">Not sure</option>
-                <option value="No fear of consequences">No fear of consequences</option>
-            </select>
-        </div>
-        <div>
-            <label>Since the start of the last academic year, have you experienced any professional, legal, or violent retaliation for your professional expression (research, teaching/studies, publication, public expression)? </label>
-            <select name="experienced_retaliation">
-                <option value=""></option>
-                <option value="Yes">Yes</option>
-                <option value="No">No</option>
-                <option value="Not sure">Not sure</option>
-            </select>
-        </div>
-        <div>
-            <label>Since the start of the last academic year, are you aware of any professional colleagues or students who have experiences any professional, legal, or violent retaliation for their professional expression (research, teaching/studies, publication, public expression)? </label>
-            <select name="aware_of_colleagues_experienced_retaliation">
-                <option value=""></option>
-                <option value="Yes">Yes</option>
-                <option value="No">No</option>
-                <option value="Not sure">Not sure</option>
-            </select>
-        </div>
-        <div>
-            <label>Compared to before the start of the last academic year, are you more or less likely today to self-censor your professional expression (research, teaching/studies, publication, public expression) because of fear of professional, legal, or violent retaliation? </label>
-            <select name="likeliness_to_selfcensor">
-                <option value=""></option>
-                <option value="More likely">More likely</option>
-                <option value="Less likely">Less likely</option>
-                <option value="About the same">About the same</option>
-            </select>
-        </div>
-        <input class="btn btn-outline-danger" type="submit" value="Submit Anonymously">
     </form>
     </div>
 </body>
+<script src="{{url_for('static', filename='scripts/main.js')}}"></script>
 </html>
