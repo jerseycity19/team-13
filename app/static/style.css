@@ -1,4 +1,48 @@
-body{
-    color: orange;
+*{
     font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+.logo{
+    background-image: url(/images/logo.png);
+    width: 500px;
+    height: 200px;
+}
+.screen1{
+    background-color: #e2656b;
+    color: white;
+    width: 40%;
+    margin:auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+ul{
+    background-color: #e2656b;
+}
+li{
+    background-color: #e2656b;
+}
+select{
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-bottom: 1px solid #e2656b;
+    outline:none;
+    margin-left: 5px;
+}
+option{
+    outline:none;
+    background: #e2656b;
+    border:none;
+}
+option:hover{
+    background: #64bed1;
+}
+.divForm{
+    width:50%;
+    margin: auto;
+}
+.logo{
+    width: 20%;
+    height: 5%;
+    align:center;
 }
