@@ -13,7 +13,7 @@
 .screen1{
     background-color: #e2656b;
     color: white;
-    width: 40%;
+    width: 50%;
     margin:auto;
     padding: 10px;
     border-radius: 5px;
@@ -50,7 +50,4 @@ option{
     text-align: center;
     font-style: italic;
     color:grey;
-}
-
-.logo{
 }
