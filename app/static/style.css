@@ -49,6 +49,10 @@ option{
     padding-left: 20px;
     padding-right: 20px;
 }
+.text-center{
+    margin-top: 3%;
+    border: 1px solid #e2656b;
+}
 
 @media screen and (max-width: 575.98px) { 
     input[type="submit"]{

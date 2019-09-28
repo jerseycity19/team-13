@@ -1,5 +1,5 @@
 import json
-from app import app, bucket, db
+from app import app, bucket, db, partners
 from flask import render_template, request, url_for, redirect
 
 
@@ -31,4 +31,8 @@ def index():
 
     db.collection('Information').add(to_insert)
 
-    return redirect(url_for("index"))
+    return redirect(url_for("thanks"))
+
+@app.route("/thank-you")
+def thanks():
+    return render_template("thank-you.html")
