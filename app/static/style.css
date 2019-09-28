@@ -3,7 +3,7 @@
 }
 .logo{
     background-image: url(/images/logo.png);
-    max-width: 100%;
+    max-width: 60%;
     margin-top: 3%;
 }
 .logo img{
