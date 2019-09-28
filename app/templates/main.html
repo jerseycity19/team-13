@@ -43,11 +43,20 @@
             </select>
         </div>
         <div>
-            <label>Select your country of residence: </label>
+            <label>Please identify your country of residence: </label>
             <select name="countries">
                 <option value=""></option>
                 {% for coun in countries %}
                 <option name="{{ coun["country"] }}" value="{{ coun["continent"] }}">{{ coun["country"] }}</p>
+                {% endfor %}
+            </select>
+        </div>
+        <div>
+            <label>Please identify your primary professional language: </label>
+            <select name="language">
+                <option value=""></option>
+                {% for lang in languages %}
+                <option name="{{ languages[lang] }}" value="{{ languages[lang] }}">{{ languages[lang]['native'] }}</p>
                 {% endfor %}
             </select>
         </div>

@@ -7,11 +7,7 @@ import json
 def index():
     country_file = open("app/data/country-by-continent.json")
     countries = json.load(country_file)
-    return render_template('main.html', countries=countries)
-
-@app.route('/languages')
-def languages():
     language_file = open("app/data/languages.json", encoding="utf-8")
     languages = json.load(language_file)
-    return render_template('languages.html', languages=languages)
+    return render_template('main.html', countries=countries, languages=languages)
 
