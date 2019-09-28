@@ -13,7 +13,7 @@
     <form>
         <div>
             <label>Please identify your user type: <label>
-            <select>
+            <select name="user">
                 <option value=""></option>
                 <option value="Scholar">Scholar</option>
                 <option value="Student">Student</option>
@@ -23,7 +23,7 @@
         </div>
         <div>
             <label>Please identify your age range: <label>
-            <select>
+            <select name="age">
                 <option value=""></option>
                 <option value="20-29">20-29</option>
                 <option value="30-39">30-39</option>
@@ -35,7 +35,7 @@
         </div>
         <div>
             <label>Please identity your gender: </label>
-            <select>
+            <select name="gender">
                 <option value=""></option>
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>
@@ -58,6 +58,41 @@
                 {% for lang in languages %}
                 <option name="{{ languages[lang] }}" value="{{ languages[lang] }}">{{ languages[lang]['native'] }}</p>
                 {% endfor %}
+            </select>
+        </div>
+        <div>
+            <label>Please identify your employment status: </label>
+            <select name="employment">
+                <option value=""></option>
+                <option value="Tenure or permanent">Tenure or other permanent employment</option>
+                <option value="Full time time limited">Full-time time-limited contract</option>
+                <option value="Adjunct or part time">Adjunct or part-time contract</option>
+                <option value="Part time">Part-time no contract</option>
+                <option value="Not employed">Not employed</option>
+            </select>
+        </div>
+        <div>
+            <label>Please identify your disciple area: </label>
+            <select name="employment">
+                <option value=""></option>
+                <option value="Natural Sciences">Natural Sciences</option>
+                <option value="Social Sciences">Social Sciences</option>
+                <option value="Arts and Humanities">Arts and Sumanities</option>
+                <option value="Engineering">Engineering</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Medicine">Medicine</option>
+                <option value="Business and Finance">Business/Finance</option>
+                <option value="Law and Human Rights">Law/Human Rights</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <div>
+            <label>How sensitive is your work? </label>
+            <select name="sensitive">
+                <option value="Not very sensitive">Not very sensitive</option>
+                <option value="Somewhat sensitive">Somewhat sensitive</option>
+                <option value="More sensitive than most">More sensitive than most</option>
+                <option value="Extremely sensitive">Extremely sensitive</section></option>
             </select>
         </div>
     </form>
