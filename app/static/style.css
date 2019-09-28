@@ -1,6 +1,10 @@
 *{
     font-family: "Times New Roman";
 }
+body {
+    text-align: justify !important;
+    text-justify: inter-word;
+}
 .logo{
     max-width: 60%;
     margin-top: 3%;
@@ -30,6 +34,9 @@ select{
     margin-left: 5px;
     max-width: 100%;
     margin-bottom: 1%;
+}
+label {
+    display:block !important;
 }
 option{
     outline:none;
