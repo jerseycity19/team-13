@@ -2,3 +2,6 @@
 
 Event <b>{{data.eventname}}</b> with code <code>{{data.code}}</code> was successfully created.
 The event will be active from {{data.datestart}} until {{data.dateend}}.
+
+Use the following link to share your event:
+<code><a href="{{url_for('index') + '?code=' + data.code}}">{{data.code}}</a></code>

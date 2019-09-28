@@ -1,0 +1,31 @@
+<body>
+    <h1>Add user</h1>
+
+    Page to add administrators (access all data) or partners (can create events).
+
+    <form method="post">
+        <div>
+            <label for="username">Username *</label>
+            <input id="username" name="username" required />
+        </div>
+
+        <div>
+            <label for="password">Password *</label>
+            <input type="password" id="password" name="password" required />
+        </div>
+
+        <div>
+            <label for="radioAdmin">Administrator</label>
+            <input type="radio" id="radioAdmin" name="role" value="1" />
+        </div>
+
+        <div>
+            <label for="radioPartner">Partner</label>
+            <input type="radio" id="radioPartner" name="role" value="2" selected />
+        </div>
+
+        <div>
+            <button type="submit">Confirm</button>
+        </div>
+    </form>
+</body>
