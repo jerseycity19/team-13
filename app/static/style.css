@@ -1,7 +1,13 @@
+*{
+    font-family: "Times New Roman";
+}
 .logo{
     background-image: url(/images/logo.png);
-    width: 500px;
-    height: 200px;
+    max-width: 100%;
+    margin-top: 3%;
+}
+.logo img{
+    max-width: 100%;
 }
 .screen1{
     background-color: #e2656b;
@@ -10,6 +16,12 @@
     margin:auto;
     padding: 10px;
     border-radius: 5px;
+    margin-bottom: 10px;
+}
+.user{
+    letter-spacing: 2px;
+    text-align:center;
+    margin-bottom: 10px;
 }
 ul{
     background-color: #e2656b;
@@ -33,5 +45,10 @@ option{
     width:50%;
     margin: auto;
 }
+.self-censorship{
+    text-align: center;
+    font-style: italic;
+}
+
 .logo{
 }

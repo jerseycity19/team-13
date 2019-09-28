@@ -8,7 +8,7 @@
     <link href="{{url_for('static', filename='bootstrap.min.css')}}" rel="stylesheet">
 </head>
 
-<div class = "logo">
+<div class = "logo mx-auto">
     <img class = "mx-auto d-block" src="https://cdn.discordapp.com/attachments/617864535688216709/627368641524137986/logo.png"><br>
     <img class = "mx-auto d-block" src="https://cdn.discordapp.com/attachments/617864535688216709/627378350717009950/statement.png"><br>
 </div>
@@ -22,11 +22,14 @@
 </div>
 
 <body>
-    <div>
-        <p>This is placeholder introductory information.</p>
-    </div>
     <div class="divForm">
     <form>
+        <div>
+            <input type="checkbox" name="condition" value="checked">I understand and agree that the data I submit
+            will be used anonymously in reports, studies and advocacy about self-censorship.<br>
+        </div>
+        <hr>
+        <div class="user">USER INFORMATION</div>
         <div>
             <label>Please identify your user type: <label>
             <select name="user">
@@ -112,6 +115,16 @@
                 <option value="Extremely sensitive">Extremely sensitive</option>
             </select>
         </div>
+
+        <hr>
+
+        <div class="self-censorship">"Self-censorship in higher education is defined as refraining from examining specific research questions, teaching specific topics,
+        or sharing specific theories, evidence or ideas, through publication or public or private expression (collectively, "professional expression")
+        , because of fear of professional (e.g. losing job or promotion), legal (e.g. prosecution or fine), or violent retaliation (e.g. harassment, assault),
+        whether from state or non-state sources, against yourself or others (e.g. family members)."</div>
+
+        <hr>
+
         <div>
             <label>Since the start of the last academic year, how often have you self-censored your professional expression (research, teaching/studies, publication, public expression) because of fear of professional, legal, or violent retaliation? <label>
             <select>
