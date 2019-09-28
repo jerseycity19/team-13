@@ -5,8 +5,7 @@ import json
 @app.route('/')
 @app.route('/index', methods = ['GET'])
 def index():
-    UserID = ['Scholar', 'Student', 'Administrator', 'Non-University']
-    return render_template('test.html', UserID=UserID)
+    return render_template('main.html')
 
 @app.route('/languages')
 def languages():
