@@ -7,6 +7,24 @@
     <link href="{{url_for('static', filename='style.css')}}" rel="stylesheet">
     <link href="{{url_for('static', filename='bootstrap.min.css')}}" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <style>
+        .screen1{
+            background-color: {{ highlightColor }};
+        }
+        ul{
+            background-color: {{ highlightColor }};
+        }
+        li{
+            background-color: {{ highlightColor }};
+        }
+        select {
+            border-bottom: 1px solid {{ highlightColor }};
+        }
+        input[type="submit"]{
+            color: {{ highlightColor }};
+            border-color: {{ highlightColor }};
+        }
+    </style>
 </head>
 
 <div class = "logo mx-auto">
@@ -26,7 +44,7 @@
     <div class="divForm">
     <form method ="POST">
         <div>
-            <input type="checkbox" name="condition" value="checked">I understand and agree that the data I submit
+            <input type="checkbox" name="condition" value="checked"> I understand and agree that the data I submit
             will be used anonymously in reports, studies and advocacy about self-censorship.<br>
         </div>
         <hr>

@@ -15,7 +15,8 @@ def index():
         countries = json.load(country_file)
         language_file = open("app/data/languages.json", encoding="utf-8")
         languages = json.load(language_file)
-        return render_template('main.html', countries=countries, languages=languages)
+        highlightColor = "#e2656b"
+        return render_template('main.html', countries=countries, languages=languages, highlightColor=highlightColor)
     	
     # it's a POST
     to_insert = request.form.to_dict()
